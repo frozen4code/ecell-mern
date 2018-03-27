@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: black !important;
+}
+.nav-button {
+  cursor: pointer;
+}
+.nav-button:hover, .nav-button:active {
+  color: #17ee54 !important;
+}
+.nav-logo:hover {
+  color: #17ee54 !important;
+}
+.nav-toggle{
+  border: 0;
+}

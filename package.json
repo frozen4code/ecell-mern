@@ -1,0 +1,30 @@
+{
+  "name": "ecell-mern",
+  "version": "0.0.1",
+  "description": "MERN STACK - CMS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "frozen4code",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frozen4code/ecell-mern.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frozen4code/ecell-mern/issues"
+  },
+  "homepage": "https://github.com/frozen4code/ecell-mern#readme"
+}
