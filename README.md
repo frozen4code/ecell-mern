@@ -19,4 +19,5 @@ npm start
 ##### Client side Dependencies
 * [ReactJS](https://reactjs.org/)
 * [Bootstrap](https://getbootstrap.com/)
-* [Reactstrap](https://reactstrap.github.io/)
+* SlickNav
+
