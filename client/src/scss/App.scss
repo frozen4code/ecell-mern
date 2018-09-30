@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$green: #31EE90;
+$font: 'Montserrat',
+sans-serif;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+a {
+    transition: all 0.2s linear;
+}
+
+#hero-area {
+    overflow: hidden;
+    position: relative;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 0px;
+    color: $green;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    display: inline-block;
+}
+
+/* 
+  Navbar
+*/
+
+.bg-faded {
+    background-color: transparent;
+}
+
+.menu-bg {
+    background-color: white !important;
+    box-shadow: 0 1px 3px RGBA(0, 0, 0, 0.2);
+    z-index: 9999;
+    padding: 10px;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-logo {
+    height:64px;
+}
+
+.nav-link {
+    color: #999 !important;
+}
+
+.menu-bg .navbar-nav .nav-link {
+    color: $green !important;
+}
+
+.navbar-expand-lg {
+    .navbar-nav {
+        .nav-link {
+            color: white;
+            padding: 10px;
+            margin-left: 5px;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+        .nav-link:hover,
+        .active>.nav-link,
+        .nav-link.active,
+        .nav-link.open,
+        .open>.nav-link {
+            color: $green !important;
+        }
+    }
+}
+
+.slicknav_btn {
+    border-color: $green;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+    background: $green;
+}
+
+#root {
+    display: block;
+    position: sticky;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-header {
+    width: 100%;
+  }
+  .navbar-brand {
+    position: absolute;
+    padding: 15px 0px;
+    top: 0;
+  }
+  .navbar-brand img {
+    width: 75%;
+  }
+  #mobile-menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+  .slicknav_nav .active a {
+    background: #E91E63;
+    color: #fff;
+  }
+  .slicknav_nav a:hover,
+  .slicknav_nav a:focus,
+  .slicknav_nav .active {
+    color: #FD6E74;
+    outline: none;
+    background: #f8f9fa;
+  }
+}

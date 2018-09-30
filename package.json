@@ -7,18 +7,23 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "yarn start --prefix client",
+    "sass": "sass client/src/scss/App.scss client/src/App.css --style compressed",
+    "sass:watch": "sass --watch client/src/scss/*.scss:client/src/App.css --style compressed",
+    "dev": "concurrently \"yarn server\" \"yarn sass\" \"yarn sass:watch\" \"yarn client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "frozen4code",
   "license": "MIT",
   "dependencies": {
-    "concurrently": "^3.5.1",
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "nodemon": "^1.17.2"
+    "mongoose": "^5.3.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^3.6.0",
+    "nodemon": "^1.18.4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/frozen4code/ecell-mern.git"
